@@ -36,7 +36,7 @@ describe User do
           it 'Userオブジェクトは無効である' do
             user.valid?
             expect(user.valid?).to be(false)
-            expect(user.errors[:nickname]).to include('is too long (maximum is 20 characters)')
+            expect(user.errors[:nickname]).to include('ニックネームは20文字以下に設定して下さい。')
           end
         end
       end
@@ -46,7 +46,7 @@ describe User do
           let(:nickname){''}
           it 'Userオブジェクトは無効である' do
             expect(user.valid?).to be(false)
-            expect(user.errors[:nickname]).to include("can't be blank")
+            expect(user.errors[:nickname]).to include("ニックネームが入力されていません。")
           end
         end
       end

@@ -1,0 +1,44 @@
+ja:
+  activerecord:
+    errors:
+      messages:
+        not_saved: "エラーが発生したためユーザーは保存されませんでした。"
+      models:
+        user:
+          attributes:
+            email:
+              taken: "メールアドレスは既に使用しています。"
+              blank: "メールアドレスが入力されていません。"
+              invalid: "メールアドレスは有効でありません。"
+            nickname:
+              blank: "ニックネームが入力されていません。"
+              too_long: "ニックネームは%{count}文字以下に設定して下さい。"
+            password:
+              blank: "パスワードが入力されていません。"
+              too_short: "パスワードは%{count}文字以上に設定して下さい。"
+              too_long: "パスワードは%{count}文字以下に設定して下さい。"
+              invalid: "パスワードは有効ではありません。"
+            password_confirmation:
+              confirmation: "確認用パスワードが一致していません。"
+    models:
+      user: "ユーザー"
+    attributes:
+      user:
+        nickname: "ニックネーム"
+        email: "メールアドレス"
+        password: "パスワード"
+        password_confirmation: "確認用パスワード"
+    
+
+  devise:
+    failure:
+      invalid: "メールアドレスまたはパスワードが違います。"
+    registrations:
+      user:
+        signed_up: "ユーザー登録に成功しました。"
+    sessions:
+      new:
+        sign_in: "ログイン"
+      signed_in: "ログインしました。"
+      user:
+        signed_out: "ログアウトしました。"
