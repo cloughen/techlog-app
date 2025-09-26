@@ -43,6 +43,8 @@ ja:
   devise:
     failure:
       invalid: "メールアドレスまたはパスワードが違います。"
+      user:
+        unauthenticated: "ログインしてください。"
     registrations:
       user:
         signed_up: "ユーザー登録に成功しました。"
